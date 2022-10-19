@@ -30,11 +30,14 @@ console.log('example task:', processFirstItem(['foo','bar'],function(str){return
   Study the code for counter1 and counter2, then answer the questions below.
   
   1. What is the difference between counter1 and counter2?
-  
+        counter1 RETURNS a function. counter2 does not include a function within a function.
+
   2. Which of the two uses a closure? How can you tell?
-  
+        counter2 uses a closure when it reached OUTSIDE OF THE FUNCTION to use the count variable.
+        
   3. In what scenario would the counter1 code be preferable? In what scenario would 
-     counter2 be better?  
+     counter2 be better?
+        unfortunately, I don't yet know.  
 */
 
 // counter1 code
@@ -63,11 +66,19 @@ Use the inning function below to do the following:
   
 NOTE: This will be a callback function for the tasks below
 */
-
-function inning(/*Code Here*/){
-    /*Code Here*/
+console.log 
+function inning(){
+  return (Math.floor(Math.random() * 3));
+  //  inningScore = Math.random();
+  //   if (inningScore < 0.334) {
+  //     return 0;
+  //   } else if (inningScore < 0.667) {
+  //     return 1;
+  //   } else {
+  //     return 2;
+  //   }
 }
-
+console.log('task 2:', inning());
 
 /* ⚾️⚾️⚾️ Task 3: finalScore() ⚾️⚾️⚾️
 Use the finalScore function below to do the following:
@@ -83,7 +94,7 @@ Use the finalScore function below to do the following:
 }
 */ 
 
-function finalScore(/*Code Here*/){
+function finalScore(scoreBoard, whatInning){
   /*Code Here*/
 }
 
